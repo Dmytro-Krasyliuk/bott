@@ -14,6 +14,8 @@ img {
   width: 100%;
   background: white;
   margin: auto;
+  position: relative;
+  height: 100vh;
 }
 
 body {
@@ -51,6 +53,15 @@ body {
   text-align: center;
   padding: 10px;
 }
+.loader-wrapper {
+  position: absolute;
+  bottom: 100px;
+  max-width: 500px;
+  width: 100%;
+  width: 100%;
+  padding: 20px;
+  left: 0;
+}
 .loader-bg {
   height: 20px;
   background: #d0f7ff;
@@ -64,12 +75,17 @@ body {
   background: linear-gradient(90deg, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
 }
 .footer {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #ccc;
   background: #efefef;
   height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
+  max-width: 500px;
+  width: 100%;
 }
 
 .answer-btn {
@@ -77,7 +93,7 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #ffffff;
-  background: #33ff78;
+  background: #27c25a;
   border-radius: 7px;
   border: 0;
   width: 100%;
