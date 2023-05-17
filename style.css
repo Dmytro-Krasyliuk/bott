@@ -13,7 +13,7 @@ img {
   max-width: 500px;
   width: 100%;
   background: white;
-  background: var(--tg-color-scheme);
+  /* background: var(--tg-color-scheme); */
   margin: auto;
   position: relative;
   height: 100vh;
