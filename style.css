@@ -13,6 +13,7 @@ img {
   max-width: 500px;
   width: 100%;
   background: white;
+  background: var(--tg-color-scheme);
   margin: auto;
   position: relative;
   height: 100vh;
@@ -54,7 +55,7 @@ body {
   padding: 10px;
 }
 .loader-wrapper {
-  position: absolute;
+  /* position: absolute; */
   bottom: 100px;
   max-width: 500px;
   width: 100%;
@@ -75,7 +76,7 @@ body {
   background: linear-gradient(90deg, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
 }
 .footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   border-top: 1px solid #ccc;
   background: #efefef;
