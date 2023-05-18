@@ -40,15 +40,19 @@ body {
 
 .task-answers {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 20px 0;
 }
 .task-answer {
-  min-width: 45%;
+  min-width: 40%;
+  background: linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
   background: var(--tg-theme-button-color);
   color: var(--tg-theme-button-text-color);
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
 }
 .loader-wrapper {
   /* position: absolute; */
