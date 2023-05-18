@@ -12,7 +12,6 @@ img {
 .app {
   max-width: 500px;
   width: 100%;
-  background: white;
   background: var(--tg-theme-bg-color);
   margin: auto;
   position: relative;
@@ -76,29 +75,4 @@ body {
   width: 20%;
   height: 14px;
   background: linear-gradient(90deg, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
-}
-.footer {
-  /* position: fixed; */
-  bottom: 0;
-  border-top: 1px solid #ccc;
-  background: #efefef;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.answer-btn {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #ffffff;
-  background: #27c25a;
-  border-radius: 7px;
-  border: 0;
-  width: 100%;
-  height: 50px;
 }
