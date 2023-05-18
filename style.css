@@ -13,7 +13,7 @@ img {
   max-width: 500px;
   width: 100%;
   background: white;
-  /* background: var(--tg-color-scheme); */
+  background: var(--tg-theme-bg-color)
   margin: auto;
   position: relative;
   height: 100vh;
@@ -50,6 +50,8 @@ body {
 .task-answer {
   min-width: 40%;
   background: linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
+  background: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
   border-radius: 20px;
   text-align: center;
   padding: 10px;
