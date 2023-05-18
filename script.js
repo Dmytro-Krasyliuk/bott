@@ -1,10 +1,10 @@
 let tg = window.Telegram.WebApp;
+let nameProfile = document.getElementsByClassName("profile-name")[0];
+nameProfile.textContent = tg.initDataUnsafe?.user?.username;
 
 document.addEventListener("DOMContentLoaded", () => {
-  let nameProfile = document.getElementsByClassName("profile-name")[0];
-  let avaProfile = document.getElementsByClassName("profile-ava")[0];
-  nameProfile.textContent = tg.initDataUnsafe?.user?.username;
-  avaProfile.src = tg.initDataUnsafe?.user?.photo_url;
+    let avaProfile = document.getElementsByClassName("profile-ava")[0];
+    avaProfile.src = tg.initDataUnsafe?.user?.photo_url;
 });
 
 tg.ready();
