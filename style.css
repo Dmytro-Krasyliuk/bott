@@ -35,7 +35,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: var(--text_color);
+  color: var(--tg-theme-text-color);
   margin-top: 15px;
 }
 
