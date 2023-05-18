@@ -1,11 +1,11 @@
 let tg = window.Telegram.WebApp;
 
-tg.ready();
+tg.MainButton.isVisible = true;
 
 tg.MainButton.setText("Відповісти");
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-  tg.sendData("some string that we need to send");
+  // tg.sendData("some string that we need to send");
   //при клике на основную кнопку отправляем данные в строковом виде
 
   // tg.showPopup({
@@ -15,10 +15,10 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
 
   let nameProfile = document.getElementsByClassName("profile-name")[0];
   nameProfile.textContent = tg.initDataUnsafe?.user?.username;
-
 });
-
-tg.MainButton.isVisible = true;
+document.addEventListener("DOMContentLoaded", () => {
+  tg.ready();
+});
 
 // console.log(tg.initData);
 
