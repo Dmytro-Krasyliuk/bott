@@ -19,5 +19,5 @@ tg.MainButton.isVisible = true;
 console.log(tg.initData);
 document.addEventListener("DOMContentLoaded", () => {
   let nameProfile = document.getElementsByClassName("profile-name")[0];
-  nameProfile.textContent = tg.WebAppInitData.user.username;
+  nameProfile.textContent = tg.initDataUnsafe?.user?.username;
 });
