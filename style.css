@@ -75,3 +75,15 @@ body {
   height: 14px;
   background: linear-gradient(90deg, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
 }
+.profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+.profile-ava {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 1px solid white;
+}
