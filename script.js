@@ -19,4 +19,4 @@ tg.MainButton.isVisible = true;
 console.log(tg.initData);
 
 let nameProfile = document.getElementsByClassName("profile-name")[0];
-nameProfile.textContent = tg.WebAppUser.username;
+nameProfile.textContent = tg.initData;
