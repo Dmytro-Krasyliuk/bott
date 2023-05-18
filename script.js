@@ -1,17 +1,22 @@
-window.Telegram.WebApp.ready();
+let tg = window.Telegram.WebApp;
 
-window.Telegram.WebApp.MainButton.setText("Відповісти");
+tg.ready();
+
+tg.MainButton.setText("Відповісти");
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-  window.Telegram.WebApp.sendData("some string that we need to send");
+  tg.sendData("some string that we need to send");
   //при клике на основную кнопку отправляем данные в строковом виде
 
-  window.Telegram.WebApp.showPopup({
+  tg.showPopup({
     title: "hello1",
     message: "Правильно! +10 балів!",
   });
 });
 
-window.Telegram.WebApp.MainButton.isVisible = true;
+tg.MainButton.isVisible = true;
 
-console.log(window.Telegram.WebApp.initData);
+console.log(tg.initData);
+
+let nameProfile = document.getElementsByClassName("profile-name")[0];
+nameProfile.textContent = tg.WebAppUser.username;
