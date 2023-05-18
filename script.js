@@ -1,7 +1,9 @@
 let tg = window.Telegram.WebApp;
+
 let nameProfile = document.getElementsByClassName("profile-name")[0];
+let avaProfile = document.getElementsByClassName("profile-ava")[0];
 nameProfile.textContent = tg.initDataUnsafe?.user?.username;
-photo_url;
+avaProfile.src = tg.initDataUnsafe?.user?.photo_url;
 tg.MainButton.isVisible = true;
 
 tg.MainButton.setText("Відповісти");
