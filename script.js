@@ -17,6 +17,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
 tg.MainButton.isVisible = true;
 
 console.log(tg.initData);
-
-let nameProfile = document.getElementsByClassName("profile-name")[0];
-nameProfile.textContent = tg.initData;
+document.addEventListener("DOMContentLoaded", () => {
+  let nameProfile = document.getElementsByClassName("profile-name")[0];
+  nameProfile.textContent = tg.initData;
+});
